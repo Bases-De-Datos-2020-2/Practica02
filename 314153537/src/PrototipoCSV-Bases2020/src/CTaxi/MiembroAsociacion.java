@@ -14,15 +14,15 @@ import java.util.Date;
 public abstract class MiembroAsociacion {
     protected String nombre;
     protected String domicilio;
-    protected double licenciaDeConducir;
+    protected String licenciaDeConducir;
     protected Date ingresoAsociacion;
     //foto como chingados?
     protected String email;
-    protected double telefono;
+    protected String telefono;
 
     public MiembroAsociacion(String nombre, String domicilio, 
-            double licenciaDeConducir, Date ingresoAsociacion, 
-            String email, double telefono) {
+            String licenciaDeConducir, Date ingresoAsociacion, 
+            String email, String telefono) {
         this.nombre = nombre;
         this.domicilio = domicilio;
         this.licenciaDeConducir = licenciaDeConducir;
@@ -50,11 +50,11 @@ public abstract class MiembroAsociacion {
         this.domicilio = domicilio;
     }
 
-    public double getLicenciaDeConducir() {
+    public String getLicenciaDeConducir() {
         return licenciaDeConducir;
     }
 
-    public void setLicenciaDeConducir(double licenciaDeConducir) {
+    public void setLicenciaDeConducir(String licenciaDeConducir) {
         this.licenciaDeConducir = licenciaDeConducir;
     }
 
@@ -74,11 +74,11 @@ public abstract class MiembroAsociacion {
         this.email = email;
     }
 
-    public double getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(double telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
     //Fin de los metodos de modificacion y acceso
@@ -92,9 +92,5 @@ public abstract class MiembroAsociacion {
                 +"Email= " + email + "\n"
                 +"Numero de telefono= " + telefono + "\n";
     }
-
-   
-    
-    
     
 }

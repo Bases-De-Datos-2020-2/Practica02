@@ -22,8 +22,8 @@ public class Dueño extends MiembroAsociacion{
      * @param telefono numero de telefono del dueño
      * @param RFC rfc del dueño
      */
-    public Dueño(String nombre, String domicilio, double licencia,
-                Date ingreso, String email, double telefono, String RFC) {
+    public Dueño(String nombre, String domicilio, String licencia,
+                Date ingreso, String email, String telefono, String RFC) {
         super(nombre, domicilio, licencia, ingreso, email, telefono);
         this.RFC = RFC; //aqui la diferecia de dueño y chofer en la version 0.1
     }

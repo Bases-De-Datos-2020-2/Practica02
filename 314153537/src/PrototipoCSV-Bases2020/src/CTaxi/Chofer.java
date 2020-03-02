@@ -19,8 +19,8 @@ public class Chofer extends MiembroAsociacion{
      * @param email Email del chofer
      * @param telefono numero de telefono
      */
-    public Chofer(String nombre, String domicilio, double licencia,
-                Date ingreso, String email, double telefono) {
+    public Chofer(String nombre, String domicilio, String licencia,
+                Date ingreso, String email, String telefono) {
         super(nombre, domicilio, licencia, ingreso, email, telefono);
     }
 
