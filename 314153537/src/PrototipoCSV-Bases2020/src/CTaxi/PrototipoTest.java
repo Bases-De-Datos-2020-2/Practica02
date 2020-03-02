@@ -31,15 +31,17 @@ public class PrototipoTest {
         
         Dueño dueño2 = new Dueño("Jose Alberto", "Fondo de bikini",
         "54432", today, "DonJoseAlberto@dueño.com", "5576545621", "JOKJ9003181TO");
-        
+        /*
         System.out.println("El chofer es:");
         System.out.println(chofer1);
         System.out.println("Y el taxi es:");
         System.out.println(taxi1);
-        
+        */
         
         
         System.out.println("Ahora provaremos con archivos");
+        
+        System.out.println("Los taxis");
         //objeto de archivos csv taxis
         TaxisCSV tcsv = new TaxisCSV();
         
@@ -52,6 +54,29 @@ public class PrototipoTest {
         tcsv.desplegarListaTaxis(taxisRecuperados);
         
         
+        System.out.println("Los Choferes");
+        //Los choferes
+        ChoferesCSV ccsv = new ChoferesCSV();
+        ArrayList<Chofer> choferes = new ArrayList();
+        choferes.add(chofer1);
+        Date dateChofer = new Date();
+        choferes.add(new Chofer("Jaimico", "PeriNorte", "345678", dateChofer,
+                "jaimico123@chofer.com", "55789878"));
+        
+        ccsv.exportarChoferesCSV(choferes);
+        
+        ArrayList choferesRecuperados = ccsv.importarChoferesCSV();
+        ccsv.desplegarListaChofer(choferesRecuperados);
+        
+        System.out.println("Los Dueños");
+        DueñosCSV dcsv = new DueñosCSV();
+        ArrayList<Dueño> dueños = new ArrayList();
+        dueños.add(dueño1);
+        dueños.add(dueño2);
+        dcsv.exportarDueñosCSV(dueños);
+        
+        ArrayList<Dueño> dueñosRecuperados = dcsv.importarDueñosCSV();
+        dcsv.desplegarListaTaxis(dueñosRecuperados);
         
     }
 }
