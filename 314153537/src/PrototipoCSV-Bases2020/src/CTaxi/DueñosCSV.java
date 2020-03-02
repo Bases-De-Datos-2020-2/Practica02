@@ -124,7 +124,7 @@ public class DueñosCSV {
      * Un despliegue de dueños de la lista
      * @param dueños 
      */
-    public void desplegarListaTaxis(ArrayList<Dueño> dueños){
+    public void desplegarListaDueños(ArrayList<Dueño> dueños){
         for (Dueño dueño: dueños) {
             System.out.println(dueño);//ya tu sabhe tu estring(toString)
         }
