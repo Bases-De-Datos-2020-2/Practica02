@@ -110,8 +110,8 @@ public class Taxi {
                 +"Numero de Puertas= " + numPuertas + "\n"
                 +"¿Tiene llanta de refaccion?= " + (llantaRefaccion? "Si" : "No") + "\n"
                 + "Due\u00f1o:\n "
-                + dueño + "\n";
-                
+                + dueño.getNombre() + "\n";
+                //para evitar un relajo de info repetida
     }
     
     
