@@ -2,7 +2,6 @@ package CTaxi;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Scanner;
 /**
  * Clase test para probar los objetos y archivos
  * Habria que mejorar manejos de numeros de telefonos y licencia
@@ -18,6 +17,7 @@ import java.util.Scanner;
  */
 public class PrototipoTest {
     public static void main(String [] args){
+        //Primeras capturas de pruevas
         /*
         Date today = new Date();
         
@@ -26,12 +26,12 @@ public class PrototipoTest {
         
         //realmete los chofers necesitan un numero de licencia?
         Dueño dueño1 = new Dueño("Jose luis", "Fondo de bikini",
-        "54321", today, "DonJoseLuis@chofer.com", "55112335", "JOKJ8902281TO");
+        "54321", today, "DonJoseLuis@Dueño.com", "55112335", "JOKJ8902281TO");
         
         Taxi taxi1 = new Taxi("Mustang", "Ford", 2020, 4, 4, false, dueño1);
         
         Dueño dueño2 = new Dueño("Jose Alberto", "Fondo de bikini",
-        "54432", today, "DonJoseAlberto@chofer.com", "5576545621", "JOKJ9003181TO");
+        "54432", today, "DonJoseAlberto@Dueño.com", "5576545621", "JOKJ9003181TO");
         
         
         System.out.println("Ahora provaremos con archivos");
@@ -73,6 +73,7 @@ public class PrototipoTest {
         ArrayList<Dueño> dueñosRecuperados = dcsv.importarDueñosCSV();
         dcsv.desplegarListaDueños(dueñosRecuperados);
         */
+        //mejo ya no moverle alli arriba
         
         MenuPrototipo mP = new MenuPrototipo();
         

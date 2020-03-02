@@ -97,10 +97,11 @@ public class MenuPrototipo {
 
     /**
      * Crea dueños y los guarda para capturarlos en .csv
+     * ojo por la fuerza bruta que no se te olviden los anteriores
      */
     private void capturaDueños() {
-
-        ArrayList<Dueño> dueños = new ArrayList();
+        DueñosCSV dcsv = new DueñosCSV();
+        ArrayList<Dueño> dueños = dcsv.importarDueñosCSV();
 
         //ya lo se va a pedir que lo cambie
         System.out.println("La fecha de ingreso sera el dia de hoy");
@@ -136,7 +137,7 @@ public class MenuPrototipo {
         }
 
         //capturado
-        DueñosCSV dcsv = new DueñosCSV();
+        
         dcsv.exportarDueñosCSV(dueños);
         System.out.println("Dueños agregados");
     }
@@ -145,8 +146,8 @@ public class MenuPrototipo {
      * Lo mismo pero para choferes
      */
     private void capturaChoferes() {
-
-        ArrayList<Chofer> choferes = new ArrayList();
+        ChoferesCSV ccsv = new ChoferesCSV();
+        ArrayList<Chofer> choferes = ccsv.importarChoferesCSV();
 
         //ya lo se va a pedir que lo cambie
         System.out.println("La fecha de ingreso sera el dia de hoy");
@@ -179,7 +180,7 @@ public class MenuPrototipo {
         }
 
         //capturado
-        ChoferesCSV ccsv = new ChoferesCSV();
+        
         ccsv.exportarChoferesCSV(choferes);
         System.out.println("Choferes agregados");
     }
@@ -188,7 +189,8 @@ public class MenuPrototipo {
      * Captura de taxis
      */
     private void capturaTaxis() {
-        ArrayList<Taxi> taxis = new ArrayList();
+        TaxisCSV tcsv = new TaxisCSV();
+        ArrayList<Taxi> taxis = tcsv.importarTaxisCSV();
 
         Scanner sc = new Scanner(System.in);
         System.out.println("¿Cuantos taxis capturaras?");
@@ -226,7 +228,7 @@ public class MenuPrototipo {
         }
 
         //capturado
-        TaxisCSV tcsv = new TaxisCSV();
+        
         tcsv.exportarTaxisCSV(taxis);
         System.out.println("Taxis agregados");
     }
@@ -307,8 +309,9 @@ public class MenuPrototipo {
         x = x - 1;
 
         //todo directo
+        System.out.println("Se modificara:");
         System.out.println(dueños.get(x));
-
+        sc.nextLine();
         //todo junto en esta version, ya estoy hasta la madre, no hay mucho 
         //detalles en un prototipo super apurado
         System.out.println("Nombre:");
@@ -337,6 +340,8 @@ public class MenuPrototipo {
         dueños.get(x).setRFC(rfc);
 
         dcsv.exportarDueñosCSV(dueños);
+        
+        System.out.println("Dueño editado");
 
     }//end edidChofers
 
@@ -361,7 +366,9 @@ public class MenuPrototipo {
         x = x - 1;
 
         //todo directo
+        System.out.println("Se modificara:");
         System.out.println(choferes.get(x));
+        sc.nextLine();
 
         System.out.println("Nombre:");
         String name = sc.nextLine();
@@ -386,6 +393,8 @@ public class MenuPrototipo {
 
         //actualizar los archivos
         ccsv.exportarChoferesCSV(choferes);
+        
+        System.out.println("Chofer editado");
     }
 
     /**
@@ -409,7 +418,9 @@ public class MenuPrototipo {
         x = x - 1;//cosas de indices
 
         //todo directo
+        System.out.println("Se modificara");
         System.out.println(taxis.get(x));
+        sc.nextLine();
 
         System.out.println("Modelo:");
         String model = sc.nextLine();
@@ -440,6 +451,8 @@ public class MenuPrototipo {
 
         //la fuerza fruta que no se te olvide a los csv
         tcsv.exportarTaxisCSV(taxis);
+        
+        System.out.println("Taxi editado");
     }
 
     /**
