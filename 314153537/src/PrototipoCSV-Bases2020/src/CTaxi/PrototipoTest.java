@@ -12,7 +12,7 @@ import java.util.Date;
  * al archivo, es pura fuerza bruta, pero es mas coñazo buscar directamente en
  * el archivo, ademas esto solo es prototipo para el ansias del Chuy, y vamos
  * a meterle duro a esto con una base de datos asi que no me cuestionen >:(
- * @author wozr
+ * @author wozr y su team
  * @version 0.1
  */
 public class PrototipoTest {
