@@ -28,6 +28,15 @@ public class Dueño extends MiembroAsociacion{
         this.RFC = RFC; //aqui la diferecia de dueño y chofer en la version 0.1
     }
 
+    public Dueño(String nombre){ //un constructor simplificado y por conveniencia
+        
+        super(nombre, "La guarida secreta","6666666", new Date(), 
+                "miembro@taxis.com",
+                "556789878");
+        this.RFC = "GJGG123180OMK";
+    }
+    
+    
     /* Metodos de acceso y modificaion de su rfc*/
     public String getRFC() {
         return RFC;
