@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"CTaxi","l":"Chofer"},{"p":"CTaxi","l":"ChoferesCSV"},{"p":"CTaxi","l":"Dueño"},{"p":"CTaxi","l":"DueñosCSV"},{"p":"CTaxi","l":"MenuPrototipo"},{"p":"CTaxi","l":"MiembroAsociacion"},{"p":"CTaxi","l":"PrototipoTest"},{"p":"CTaxi","l":"Taxi"},{"p":"CTaxi","l":"TaxisCSV"}]
