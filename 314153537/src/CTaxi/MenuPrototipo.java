@@ -87,6 +87,10 @@ public class MenuPrototipo {
                     capturaTaxis();
                     entras = !entras;
                     break;
+                case "D":
+                    menu();
+                    entras = !entras;
+                    break;
                 default://volver a intentar
                     System.out.println("Vuleve a intentar");
 
@@ -279,6 +283,10 @@ public class MenuPrototipo {
                     break;
                 case "C":
                     editarTaxis();
+                    entras = !entras;
+                    break;
+                case "D":
+                    menu();
                     entras = !entras;
                     break;
                 default://volver a intentar
@@ -482,6 +490,10 @@ public class MenuPrototipo {
                     break;
                 case "C":
                     eliminarTaxis();
+                    entras = !entras;
+                    break;
+                case "D":
+                    menu();
                     entras = !entras;
                     break;
                 default://volver a intentar
