@@ -12,7 +12,7 @@ $cd src/
 
 y luego compilamos:
 
-$javac -d ../target CTaxi/*.java
+$javac -encoding UTF8 -d ../target CTaxi/*.java
 
 Para correr el programa:
 
